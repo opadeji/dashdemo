@@ -10,7 +10,7 @@ interface PayrollRecord {
 }
 
 const Payroll = () => {
-  const [payrollData, setPayrollData] = useState<PayrollRecord[]>([
+  const [payrollData] = useState<PayrollRecord[]>([
     {
       id: 1,
       employeeName: "John Doe",

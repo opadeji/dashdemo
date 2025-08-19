@@ -3,7 +3,7 @@ import { useState } from "react";
 const AdminSettings = () => {
   const [companyName, setCompanyName] = useState("TechCorp Inc.");
   const [companyEmail, setCompanyEmail] = useState("hr@techcorp.com");
-  const [companyLogo, setCompanyLogo] = useState("");
+
   const [timezone, setTimezone] = useState("GMT");
   const [themeColor, setThemeColor] = useState("#7C3AED");
 
@@ -40,15 +40,6 @@ const AdminSettings = () => {
               type="email"
               value={companyEmail}
               onChange={(e) => setCompanyEmail(e.target.value)}
-              className="w-full border rounded-lg p-2"
-            />
-          </div>
-
-          <div>
-            <label className="block font-medium">Company Logo</label>
-            <input
-              type="file"
-              onChange={(e) => setCompanyLogo(e.target.value)}
               className="w-full border rounded-lg p-2"
             />
           </div>
